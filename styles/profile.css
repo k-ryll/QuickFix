@@ -1,0 +1,49 @@
+
+
+.user-profile-container{
+    display: flex;
+    
+}
+
+.user-profile-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 1px solid;
+    padding: 1rem;
+    border-radius: 8px;
+    gap: .5rem;
+}
+.user-profile-panel img{
+    max-width: 10rem;
+    border: 1px solid  black;
+    border-radius: 100px;
+}
+.user-profile-panel h1{
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.user-profile-panel p{
+    font-size: 1rem;
+ }
+
+ .user-profile-panel button{
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: .5rem;
+    border-radius: 8px;
+ }
+
+ .user-socials-panel {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+ }
+
+ .user-socials-panel ul li{
+    font-weight: 500;
+    border-bottom: .5px solid dimgray;
+    margin-bottom: .5rem;
+ }
