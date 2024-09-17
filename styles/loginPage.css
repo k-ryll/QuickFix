@@ -1,4 +1,4 @@
-.signup-container{
+.login-container{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
 
 }
 
-.signup-panel{
+.login-panel{
 
     border-radius: 8px;
     border: solid 1px dimgrey;
@@ -19,7 +19,7 @@
 
 }
 
-.signup-panel h1{
+.login-panel h1{
     
     font-weight: bold;
     font-size: 30px;
@@ -27,14 +27,14 @@
 
 }
 
-.signup-panel h3{
+.login-panel h3{
 
     text-align: center;
     margin-top: .2rem;
 
 }
 
-.signup-form {
+.login-form {
 
     display: flex;
     flex-direction: column;
@@ -45,13 +45,13 @@
 
 }
 
-.signup-form input {
+.login-form input {
 
     margin-bottom: 1rem;
 
 }
 
-.signup-form button {
+.login-form button {
 
     border: solid 1px #04AA6D;
     border-radius: 20px;

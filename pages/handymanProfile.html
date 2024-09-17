@@ -13,55 +13,77 @@
 </head>
 <body>
     <div class="user-profile-container">
-        <header>
-        </header>
+        <header></header>
+        
+        <!-- Profile Left Section -->
         <div class="user-profile-left">
             <div class="user-profile-panel">
-                <img src="/assets/profile.jpg" alt="">
+                <img src="/assets/profile.jpg" alt="Handyman Profile Image">
                 <h1>Jane Doe</h1>
-                <p>Aircon  Repair, Plumbing, Electrical</p>
+                <p>Aircon Repair, Plumbing, Electrical</p>
                 <p>Metro Manila</p>
                 <button>Message</button>
-
             </div>
+
+            <!-- Social Links -->
             <div class="user-socials-panel">
                 <ul>
-                    <li>
-                        
-                        <span><img src="" alt="">
-                            Website</span>
-                            <span>@dlwlrma</span></li>
-                    <li>Github</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
+                    <li><img src="/assets/icons/web.svg" alt="Website Icon"> Website: <span>@janedoe</span></li>
+                    <li><img src="/assets/icons/github.svg" alt="Github Icon"> Github: <span>@janedoe</span></li>
+                    <li><img src="/assets/icons/twitter.svg" alt="Twitter Icon"> Twitter: <span>@janedoe</span></li>
+                    <li><img src="/assets/icons/instagram.svg" alt="Instagram Icon"> Instagram: <span>@janedoe</span></li>
+                    <li><img src="/assets/icons/facebook.svg" alt="Facebook Icon"> Facebook: <span>@janedoe</span></li>
                 </ul>
             </div>
         </div>
+
+        <!-- Profile Right Section -->
         <div class="user-profile-right">
-            <div>
-                    <div>
-                        <span>Full Name</span>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <span>Email</span>
-                        <input type="email">
-                    </div>
-                    <div>
-                        <span>Phone</span>
-                        <input type="number">
-                    </div>
-                    <div>
-                        <span>Mobile</span>
-                        <input type="number">
-                    </div>
-                    <div><span>Address</span>
-                        <input type="text">
-                    </div>
-                 
+            <div class="user-details">
+                <h2>Professional Details</h2>
+
+                <div>
+                    <span>Full Name</span>
+                    <input type="text" value="Jane Doe" readonly>
+                </div>
+                <div>
+                    <span>Email</span>
+                    <input type="email" value="janedoe@email.com" readonly>
+                </div>
+                <div>
+                    <span>Phone</span>
+                    <input type="number" value="1234567890" readonly>
+                </div>
+                <div>
+                    <span>Mobile</span>
+                    <input type="number" value="0987654321" readonly>
+                </div>
+                <div>
+                    <span>Address</span>
+                    <input type="text" value="Metro Manila, Philippines" readonly>
+                </div>
+                <div>
+                    <span>About me</span>
+                    <textarea class="aboutMe"></textarea>
+                </div>
+                <div></div>
+                    <span>Service Offered</span>
+                    <textarea class="service-offered"></textarea>
+                </div>
             </div>
-            <div class="ratings"></div>
+
+
+            <!-- Certifications and Skills -->
+            <div class="certifications-section">
+                <h2>Certifications & Skills</h2>
+                <ul>
+                    <li>Certified Electrician</li>
+                    <li>Licensed Aircon Technician</li>
+                    <li>Basic Plumbing Training</li>
+                </ul>
+            </div>
+
+            
         </div>
     </div>
 </body>
