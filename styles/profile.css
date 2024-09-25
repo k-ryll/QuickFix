@@ -1,19 +1,23 @@
 
  
 .user-profile-container {
-   font-family: 'Inter', sans-serif;
    font-size: 16px;
    line-height: 1.5;
-   color: #333333;
-   background-color: #f7f7f7;
+   margin: auto;
+   width: max-content;
  }
- 
+  .titles{
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  button{
+    margin-top: 1rem;
+  }
  .user-profile-left {
-   background-color: #f7f7f7;
    padding: 2rem;
-   width: 30%;
    float: left;
  }
+
  
  .user-profile-panel {
    text-align: center;
@@ -32,6 +36,7 @@
  
  .user-socials-panel {
    margin-top: 2rem;
+
  }
  
  .user-socials-panel ul {
@@ -39,10 +44,15 @@
    padding: 0;
    margin: 0;
  }
- 
+ .user-profile-right,.skills-section{
+  width: max-content;
+ }
  .user-socials-panel li {
-   display: inline-block;
    margin-right: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: #a6a6a6 1px solid;
+   padding-top: .3rem;
+   width: 100%;
  }
  
  .user-socials-panel li span {
@@ -59,42 +69,61 @@
  
  
  .user-profile-right {
-   width: 70%;
-   padding: 2rem;
+   
    display: flex; 
    flex-direction: column; 
    height: 100vh; 
+   padding-block: 2rem;
+   gap: 1rem;
  }
  
  .user-profile-right span {
    display: block;
-   margin-bottom: 1rem;
    font-size: 16px;
    color: #666666;
  }
  
  .user-profile-right input {
-   width: 100%;
-   padding: .75rem;
-   border: 1px solid #cccccc;
+   border: none;
    border-radius: 5px;
  }
  
  .user-profile-right input:focus {
    border-color: #3498db;
  }
- 
- .aboutMe, .service-offered{
-   width: 100%;
-   height: 5rem;
- }
  .user-details span{
-
+  width:15%;
  }
 
- .user-details div span{
-   margin-top: 1rem;
+ .user-details div{
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #a6a6a6;
+  margin-top: .5rem;
  }
+
+ .skills-section, .user-details, .user-socials-panel{
+  border: 1px solid black;
+  padding: 1rem;
+   padding:2rem;
+   border: 1px solid #dddddd;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .skills-section textarea{
+  border: none;
+  width: 100%;
+ }
+
+ .skills-section form{
+  display: grid;
+  column-gap: 2rem;
+  row-gap: .5rem;
+  grid-template-columns: repeat(3, 1fr);
+ }
+
+
  
  @media only screen and (max-width: 768px) {
    .user-profile-left {
