@@ -14,21 +14,56 @@
 <body>
     <header>
         <span>QuickFix</span> 
+        <button>
+           Log Out
+        </button>
      </header>
     <div class="user-profile-container">
         
         
-        <!-- Profile Left Section -->
+
         <div class="user-profile-left">
             <div class="user-profile-panel">
                 <img src="/assets/profile.jpg" alt="Handyman Profile Image">
-                <h1>Jane Doe</h1>
-                <p>Aircon Repair, Plumbing, Electrical</p>
-                <p>Metro Manila</p>
-                <button>Message</button>
+                <h1>Jane Doe<h1>
+                <p>Rating: 4.5/5</p>
+                <p>Location: Manila</p>
+                <button>Book Now</button>
             </div>
 
-            <!-- Social Links -->
+            <div id="bookingModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModalBtn" class="close">X</span>
+                    <h2>Book Your Fixer</h2>
+                    <form class="booking-form">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="name">Address</label>
+                        <input type="text" id="address" name="address" required>
+
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+            
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required>
+            
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service" required>
+                            <option value="plumbing">Plumbing</option>
+                            <option value="electrical">Electrical</option>
+                            <option value="carpentry">Carpentry</option>
+  
+                        </select>
+            
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" placeholder="Describe the issue..."></textarea>
+            
+                        <button type="submit" class="submit-btn">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+
             <div class="user-socials-panel">
                 <ul>
                     <li><img src="/assets/icons/web.svg" alt="Website Icon"> Website: <span>@janedoe</span></li>
@@ -40,7 +75,7 @@
             </div>
         </div>
 
-        <!-- Profile Right Section -->
+
         <div class="user-profile-right">
             <div class="user-details">
                 <h2 class="titles">Professional Details</h2>

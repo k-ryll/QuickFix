@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+	--clr-primary: black;
+	--clr-secondary: #a6a6a6;
+	--clr-bg: white;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -72,28 +78,50 @@ textarea{
 }
 
 header{
-	border-block: 1px #a6a6a6 solid;
+	border-block: 1px var(--clr-secondary) solid;
 	height: 3rem;
-	padding-top: .5rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	padding-inline: 5rem;
+}
+header ul{
+	display: flex;
+	margin-block: auto;
+}
+header button{
+	margin-block: auto;
+}
+header ul li{
+	margin-bottom: auto;
+	border-inline: .5px var(--clr-secondary) solid;
+	padding-inline: 1.5rem;
+	background-color: var(--clr-bg);
+	
+}
+header ul li:hover{
+	background-color: var(--clr-primary);
+	color: var(--clr-bg);
+	cursor: pointer;
+	transition: .3s ease-in;
 }
 header span{
-	margin-left: 8rem;
 	margin-block: auto;
-	font-size: 2rem;
+	
 }
 
 button{
-	border: solid 1px black;
+	border: solid 1px var(--clr-primary);
     border-radius: 20px;
     padding: .3rem;
 	padding-inline: 1rem;
-    background-color: black;
+    background-color: var(--clr-primary);
     font-family: Poppins, sans-serif;
     color: white;
 }
 button:hover{
   background-color: transparent;
-  border: 1px black solid;
-  color: black;
+  border: 1px var(--clr-primary) solid;
+  color: var(--clr-primary);
   cursor: pointer;
 }
